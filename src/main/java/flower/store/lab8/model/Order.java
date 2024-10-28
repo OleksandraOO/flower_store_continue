@@ -13,7 +13,7 @@ public class Order {
     private List<Item> items;
     private Payment paymentStrategy;
     
-    public Order() {
+    public Order(List<String> list) {
         this.items = new ArrayList<>();
     }
     
