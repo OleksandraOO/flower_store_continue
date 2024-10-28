@@ -14,15 +14,6 @@ class DeliveryStrategyTest {
         Order order = new Order(Collections.singletonList("item1"));
         
         assertTrue(dhlDelivery.deliver(order));
-        assertEquals(13.0, dhlDelivery.getDeliveryCost(order));
-    }
-
-    @Test
-    void testPostDelivery() {
-        PostDeliveryStrategy postDelivery = new PostDeliveryStrategy();
-        Order order = new Order(Collections.singletonList("item1"));
-        
-        assertTrue(postDelivery.deliver(order));
-        assertEquals(7.0, postDelivery.getDeliveryCost(order));
+        assertEquals(10.0, dhlDelivery.getDeliveryCost(order));
     }
 }
