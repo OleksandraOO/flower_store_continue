@@ -10,7 +10,7 @@ public class DHLDeliveryStrategy implements Delivery {
 
     @Override
     public boolean deliver(Order order) {
-        System.out.println("Delivering ordr via DHL service");
+        System.out.println("Delivering order via DHL service");
         return true;
     }
 
